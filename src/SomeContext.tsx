@@ -2,7 +2,7 @@ import React, { useState, createContext, FC, useEffect } from "react";
 
 const initState = { name: "名無し", age: 0 };
 type InitState = typeof initState;
-const logic = (p: InitState["age"]) => (p < 20 ? "きっず" : "おとな");
+const logic = (p: InitState["age"]) => (p < 20 ? "こども" : "おとな");
 type Label = ReturnType<typeof logic>;
 
 const useCTX = () => {

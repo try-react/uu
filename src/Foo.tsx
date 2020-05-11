@@ -15,11 +15,12 @@ export const Foo: FC = () => {
           dispatch.user.set({ name: "Foo", age: 10 });
         }}
       >
-        🖌ぼたん
+        Foo ぼたん
       </a>
-      <p>{state.user.name}</p>
-      <p>{state.user.age}</p>
-      <p>{state.label}</p>
+      <p>{state.user.name} ちゃん</p>
+      <p>
+        {state.user.age} 歳なので、{state.label}
+      </p>
     </>
   );
 };

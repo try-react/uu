@@ -13,14 +13,17 @@ export const Bar: FC = () => {
         onClick={(e) => {
           e.preventDefault();
           dispatch.user.set({ name: "Bar", age: 20 });
+          // こんなのは、しっかりエラーになる
+          // dispatch.user.set({ xx: "", age: 1 });
         }}
       >
-        🖌ぼたん
+        Bar ぼたん
       </a>
 
-      <p>{state.user.name}</p>
-      <p>{state.user.age}</p>
-      <p>{state.label}</p>
+      <p>{state.user.name} ちゃん</p>
+      <p>
+        {state.user.age} 歳なので、{state.label}
+      </p>
     </>
   );
 };
