@@ -1,0 +1,10 @@
+.button {
+    /* https://www.nxworld.net/tips/10-css-cute-design-good-chemistry-button-design-and-hover-effect.html */
+    display: inline-block;
+    padding: .75em 4em;
+    border: 2px solid #333;
+    border-radius: 3em .5em 2em .5em/.4em 2em .5em 3em;
+    color: #333;
+    text-decoration: none;
+    text-align: center;
+}
