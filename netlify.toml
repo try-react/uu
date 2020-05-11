@@ -1,6 +1,6 @@
 [build]
   command = "yarn build && yarn export"
-  publish = "build"
+  publish = "out"
 
 [[redirects]]
   from = "/*"
