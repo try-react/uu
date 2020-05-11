@@ -8,7 +8,7 @@ type Label = ReturnType<typeof logic>;
 const useCTX = () => {
   const user = useState(initState);
   const label = useState<Label>(undefined!);
-  useEffect(() => label[1](logic(user[0].age)), [user[0].age]);
+  useEffect(() => label[1](logic(user[0].age)), [label, user]);
 
   return {
     state: {
